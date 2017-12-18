@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #eee;
+}
+
+.header {
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+button {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.search-bar {
+    margin: 0 auto;
+}
+
+.booking-list tbody td {
+    cursor: pointer;
+}
+
+.logo img {
+    max-width: 200px;
+}
+
+.booking {
+    padding-top: 20px;
+}
+
+.address {
+    padding-top: 20px;
+}
+
+.btn {
+    margin: 5px 5px 5px 0;
+}
+
+/* .nights-button {
+    margin-right: 5px;
+} */
+
+/* Fixes print issue in Chrome */
+::first-letter {
+    margin: 0;
+    padding: 0;
+}
+
+.pagination {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.error {
+    color: red;
+}

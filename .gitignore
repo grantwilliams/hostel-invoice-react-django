@@ -1,0 +1,26 @@
+/node_modules
+/build
+npm-debug.log
+bundle.js
+webpack-stats.json
+
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+media
+assets/bundles
+
+config.py
+migrations
+bookings.csv
+.vscode
+
+### Celery ###
+celerybeat-schedule.db
+celerybeat-schedule
+celerybeat.pid
+dump.rdb
