@@ -7,7 +7,7 @@ from myallocator.utils import download_bookings, add_to_database
 logger = get_task_logger(__name__)
 
 @periodic_task(
-    run_every=(crontab(minute='*/5')),
+    run_every=(crontab(minute='*/1')),
     name='task_download_bookings',
     ignore_result=True
 )

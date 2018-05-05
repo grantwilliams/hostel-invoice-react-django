@@ -13,6 +13,8 @@ local_settings.py
 db.sqlite3
 media
 assets/bundles
+static/
+hostel-invoice-env/
 
 config.py
 migrations
