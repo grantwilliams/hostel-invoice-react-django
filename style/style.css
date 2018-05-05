@@ -39,10 +39,6 @@ button {
     margin: 5px 5px 5px 0;
 }
 
-/* .nights-button {
-    margin-right: 5px;
-} */
-
 /* Fixes print issue in Chrome */
 ::first-letter {
     margin: 0;
@@ -56,4 +52,13 @@ button {
 
 .error {
     color: red;
+}
+
+.loading {
+    height: 500px;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

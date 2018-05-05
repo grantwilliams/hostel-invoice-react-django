@@ -3,6 +3,7 @@ import ReactPaginate from 'react-paginate';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import * as actions from '../actions';
+import Loading from '../components/loading';
 
 class BookingsList extends Component {
   constructor(props){
@@ -37,7 +38,7 @@ class BookingsList extends Component {
   }
 
   renderTable = () => {
-    if(!this.props.bookings) { return [<tr key={0}></tr>] }
+    if(!this.props.bookings) { return [<tr key={0}></tr>, <tr key={1}><td colSpan={8}><Loading /></td></tr>] }
 
     const bookingsSlice = this.props.bookings.slice(this.state.offset, this.state.offset + 10)
     return bookingsSlice.map(booking => {
@@ -62,14 +63,14 @@ class BookingsList extends Component {
         <table className="table table-hover table-striped booking-list">
           <thead className="thead-default">
             <tr className="text-center">
-              <td>Channel</td>
-              <td>Booking ID</td>
-              <td>Booking Date</td>
-              <td>Name</td>
-              <td>Arrival Date</td>
-              <td>Nights</td>
-              <td>Departure Date</td>
-              <td>Guests</td>
+              <td><strong>Channel</strong></td>
+              <td><strong>Booking ID</strong></td>
+              <td><strong>Booking Date</strong></td>
+              <td><strong>Name</strong></td>
+              <td><strong>Arrival Date</strong></td>
+              <td><strong>Nights</strong></td>
+              <td><strong>Departure Date</strong></td>
+              <td><strong>Guests</strong></td>
             </tr>
           </thead>
           <tbody>
